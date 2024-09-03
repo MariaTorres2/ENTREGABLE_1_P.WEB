@@ -10,7 +10,7 @@
 
 
 
-.contenedor{
+.contenedorPadre{
     height: 100vh;
     width: 99vw; 
     display: grid;
@@ -24,8 +24,8 @@
 
 }
 
-@media (max-width:680px){
-    .contenedor{
+@media (max-width:428px){
+    .contenedorPadre{
          width: 100vw;
         background-color: brown;
         grid-template-areas: 
@@ -37,18 +37,115 @@
     }
 }
 
-@media (min-width: 680px){
+.img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 15rem;
+    border: 3px solid black;
+}
+
+hr{
+  background-color: black;
+  height: 3px;
+  width: 100%;
+}
+.contenedorHijo{
+    background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column; 
+   height: 242px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#contenedorCuerpo{
+    margin: 3px 0px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 311px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#titulosCuerpo{
+    font-size: 45px;
+}
+
+.contenedorNombre{
+    margin-top: 3px;
+    background-color: rgb(219, 180, 255);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 125px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: xxx-large;
+}
+#inforEspacio{
+ height: 180px;
+}
+ #inforEspacio2{
+    height: 169px;
+    align-self: center;
+ }
+
+ #inforEspacio3{
+    height: 165px;
+
+ }
+
+#informacion{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.letraBase{
+    font-size: 39px;
+    align-self: center;
+
+}
+
+#telefono{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#textoEstudio{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 260px;
+}
+@media (max-width: 834px){
     body{
-        background-color: greenyellow;
+        background-color: rgb(212, 255, 148);
     }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 1900px) {
     body{
-        background-color: blueviolet;
+        background-color: rgb(222, 113, 255);
+    }
+    .img{
+        height: 13rem;
+        width: 13rem;
+        align-self: center;
     }
 }
 
+#iconoTelefono{
+    margin-top: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+   border: none;
+}
 
 
 article{
