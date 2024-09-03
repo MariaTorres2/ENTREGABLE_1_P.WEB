@@ -59,7 +59,7 @@ hr{
    text-align: center;
 }
 
-#contenedorCuerpo{
+.contenedorCuerpo{
     margin: 3px 0px;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,47 @@ hr{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
+
+#contenUlti{
+    height: 187px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+}
+
+#conteHobbie{
+    font-size: 60px;
+    background-color: rgb(218, 186, 248);
+    width: 24.8%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    margin-right: 100px;
+    border-right: 2px solid black;
+
+
+}
+
+#hijosUltimos{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    width: auto;
+    border: none;
+    margin-top: 4px;
+   
+}
+
+#contenedorImg{
+    border: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
 
 #titulosCuerpo{
     font-size: 45px;
@@ -84,6 +125,7 @@ hr{
     border-bottom: 2px solid black;
     font-size: xxx-large;
 }
+
 #inforEspacio{
  height: 180px;
 }
@@ -105,6 +147,31 @@ hr{
     align-items: center;
 
 }
+
+.infoProyecto{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 33.4%;
+    height: 250px;
+    border-top: 2px solid black;
+}
+
+#interestContent{
+    flex-direction: column ;
+}
+
+#interestContent2{
+    flex-direction: column ;
+    margin-right: 20px;
+    width: 400px;
+    height: 180px;
+    border: none;
+}
+
 .letraBase{
     font-size: 39px;
     align-self: center;
@@ -139,6 +206,29 @@ hr{
         align-self: center;
     }
 }
+#imgBody{
+    font-size: 25px;
+    margin-right: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+}
+#imgBody2{
+    font-size: 25px;
+    margin-top: 5px;
+    width: 250px;
+    height: 20px;
+}
+.imgCuerpo{
+    height: 90%;
+    width: 60%;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+#imgSect2{
+    height: 80%;
+    width: 60%;
+}
 
 #iconoTelefono{
     margin-top: 0;
@@ -147,6 +237,11 @@ hr{
    border: none;
 }
 
+#imgInfoBody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 article{
     grid-area: article;
