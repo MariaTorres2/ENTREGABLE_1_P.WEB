@@ -1,65 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#border{
+
+#border {
     border: 1px solid black;
 }
 
-
-
-.contenedorPadre{
+.contenedorPadre {
     height: 100vh;
-    width: 99vw; 
+    width: 99vw;
     display: grid;
-    grid-template-areas: 
-    "article aside aside"
-    "article aside aside"
-    "article aside aside"
-    "footer footer footer";
+    grid-template-areas:
+        "article aside aside"
+        "article aside aside"
+        "article aside aside"
+        "footer footer footer";
     grid-template-columns: 25% 50% 26%;
-    grid-template-rows: 30% 30% 20% 20% ;
+    grid-template-rows: 30% 30% 20% 20%;
 
 }
 
-@media (max-width:428px){
-    .contenedorPadre{
-         width: 100vw;
-        background-color: brown;
-        grid-template-areas: 
-        "article "
-        "aside"
-        "footer ";
-        grid-template-columns: 100%;
-        grid-template-rows: 40% 30% 30%;
-    }
-}
-
-.img{
+.img {
     width: 14rem;
     height: 14rem;
     border-radius: 15rem;
     border: 3px solid black;
 }
 
-hr{
-  background-color: black;
-  height: 3px;
-  width: 100%;
-}
-.contenedorHijo{
-    background-color: rgb(255, 255, 255);
-   display: flex;
-   flex-direction: column; 
-   height: 242px;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+hr {
+    background-color: black;
+    height: 3px;
+    width: 100%;
 }
 
-.contenedorCuerpo{
+.contenedorHijo {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 242px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedorCuerpo {
     margin: 3px 0px;
     display: flex;
     flex-direction: column;
@@ -69,7 +56,7 @@ hr{
     border-bottom: 2px solid black;
 }
 
-#contenUlti{
+#contenUlti {
     height: 187px;
     display: flex;
     flex-direction: row;
@@ -77,20 +64,19 @@ hr{
     justify-items: center;
 }
 
-#conteHobbie{
+#conteHobbie {
     font-size: 60px;
     background-color: rgb(218, 186, 248);
     width: 24.8%;
-    height: auto;
+    margin-top: 5px;
+    height: 195px;
     text-align: center;
     align-content: center;
     margin-right: 100px;
     border-right: 2px solid black;
-
-
 }
 
-#hijosUltimos{
+#hijosUltimos {
     border: none;
     display: flex;
     flex-direction: row;
@@ -99,22 +85,22 @@ hr{
     width: auto;
     border: none;
     margin-top: 4px;
-   
+
 }
 
-#contenedorImg{
+#contenedorImg {
     border: none;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-
-
-#titulosCuerpo{
+#titulosCuerpo {
     font-size: 45px;
 }
-
-.contenedorNombre{
+#titulosCuerpo2 {
+    font-size: 45px;
+}
+.contenedorNombre {
     margin-top: 3px;
     background-color: rgb(219, 180, 255);
     justify-content: center;
@@ -126,20 +112,21 @@ hr{
     font-size: xxx-large;
 }
 
-#inforEspacio{
- height: 180px;
+#inforEspacio {
+    height: 180px;
 }
- #inforEspacio2{
+
+#inforEspacio2 {
     height: 169px;
     align-self: center;
- }
+}
 
- #inforEspacio3{
+#inforEspacio3 {
     height: 165px;
 
- }
+}
 
-#informacion{
+#informacion {
     margin-top: 2px;
     display: flex;
     flex-direction: row;
@@ -148,7 +135,7 @@ hr{
 
 }
 
-.infoProyecto{
+.infoProyecto {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -160,96 +147,443 @@ hr{
     border-top: 2px solid black;
 }
 
-#interestContent{
-    flex-direction: column ;
+#interestContent {
+    flex-direction: column;
 }
 
-#interestContent2{
-    flex-direction: column ;
+#interestContent2 {
+    flex-direction: column;
     margin-right: 20px;
     width: 400px;
     height: 180px;
     border: none;
 }
 
-.letraBase{
+.letraBase {
     font-size: 39px;
     align-self: center;
 
 }
 
-#telefono{
+.contenUlti2 {
+    margin-top: 22px;
+    height: 135px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+#telefono {
     font-size: 25px;
     margin-top: 10px;
     margin-left: 10px;
 }
 
-#textoEstudio{
+#textoEstudio {
     font-size: 25px;
-    margin-left: 0px;
     margin-top: 5px;
+    margin-bottom: 20px;
     width: 260px;
 }
-@media (max-width: 834px){
-    body{
-        background-color: rgb(212, 255, 148);
-    }
-}
 
-@media (max-width: 1900px) {
-    body{
-        background-color: rgb(222, 113, 255);
-    }
-    .img{
-        height: 13rem;
-        width: 13rem;
-        align-self: center;
-    }
-}
-#imgBody{
+#imgBody {
     font-size: 25px;
     margin-right: 17px;
     margin-left: 10px;
     margin-top: 10px;
     width: 150px;
 }
-#imgBody2{
+
+#imgBody2 {
     font-size: 25px;
     margin-top: 5px;
     width: 250px;
     height: 20px;
 }
-.imgCuerpo{
+
+.imgCuerpo {
     height: 90%;
     width: 60%;
     border: 1px solid black;
     margin-left: 15px;
 }
-#imgSect2{
+
+#imgSect2 {
     height: 80%;
     width: 60%;
 }
 
-#iconoTelefono{
+#iconoTelefono {
     margin-top: 0;
     width: 2.2rem;
     height: 2.2rem;
-   border: none;
+    border: none;
 }
 
-#imgInfoBody{
+#imgInfoBody {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-article{
+article {
     grid-area: article;
 }
-aside{
+
+aside {
     grid-area: aside;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
 
+
+
+@media (max-width:529px) {
+    .contenedorPadre {
+        width: 100vw;
+        background-color: brown;
+        grid-template-areas:
+            "article "
+            "aside"
+            "footer ";
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 30% 30%;
+    }
+}
+
+@media (min-width:530px) and (max-width: 834px) {
+    body {
+        background-color: rgb(148, 225, 255);
+    }
+
+    .contenedorPadre {
+        width: auto;
+        height: auto;
+        grid-template-columns: 30% 51% 19%;
+    }
+
+    #conteHobbie {
+        width: 23%;
+        margin-top: 10px;
+        height: 177px;
+        font-size: 10px;
+    }
+
+    .img {
+        /* imagen personal*/
+        height: 7rem;
+        width: 7rem;
+        align-self: center;
+        margin: none;
+    }
+
+    .letraBase {
+        font-size: 20px;
+    }
+
+    #telefono {
+        font-size: 15px;
+        margin-top: 5px;
+        width: 120px;
+    }
+    #telefono2 {
+        font-size: 13.2px;
+        margin-top: 5px;
+        width: 140px;
+        height: 100px;
+        text-align: left;
+    }
+
+    #textoEstudio {
+        font-size: 15px;
+        margin-top: 2px;
+        width: 140px;
+    }
+
+    #interestContent2 {
+        /* ultimo contenedor imagenes*/
+        width: 130px;
+        height: 120px;
+        margin-right: 5px;
+        margin-top: 8px;
+    }
+
+    #contenedorImg {
+        margin: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 380px;
+        margin: none;
+    }
+
+    .contenUlti2 {
+        /* ultimo contenedor*/
+        margin-top: 18px;
+        height: 150px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+
+    #imgInfoBody {
+        /* letras al lado de imagenes*/
+        width: 210px;
+        height: 70px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    #imgBody {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 200px;
+    }
+    
+    #imgBody2 {
+        font-size: 22px;
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 35px;
+        width: 170px;
+    }
+
+    .imgCuerpo {
+        /* imnagenes en el cuerpo*/
+        height: 10%;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .infoProyecto {
+        width: 427px;
+        height: 88px;
+        
+    }
+
+    .contenedorHijo {
+        /* contenedor foto personal*/
+        height: 180px;
+        margin: none;
+    }
+
+    .contenedorCuerpo {
+        /* contenedores cuerpo*/
+        height: 333px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: none;
+    }
+
+    #hijosUltimos {
+        height: 130px;
+        align-items: center;
+    }
+
+    .contenedorNombre {
+        height: 18%;
+        font-size: 41px;
+    }
+    #informacion {
+           /* informacion article, contenedor*/
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        height: 80px;
+    
+    }
+
+    #titulosCuerpo {
+        font-size: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: blueviolet;
+        height: 100px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+    #titulosCuerpo2 {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: blueviolet;
+        height: 100px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .infoProyecto {
+        height: 109.5px;
+    }
+
+    #inforEspacio {
+        height: 210px;
+    }
+
+    #inforEspacio2 {
+        height: 180px;
+    }
+
+    #inforEspacio3 {
+        height: 190px;
+
+    }
+    .imgCuerpo {
+        height: 95px;
+        width: 120px;
+        border: 1px solid black;
+        margin-left: 15px;
+    }
+    
+    #imgSect2 {
+        height: 80%;
+        width: 60%;
+    }
+    
+    #iconoTelefono {
+        margin-top: 0;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top: 5px;
+        border: none;
+    }
+
+}
+
+
+@media (min-width: 834px) and (max-width: 1900px) {
+    .contenedorPadre {
+        width: auto;
+        height: auto;
+        grid-template-columns: 23% 51% 26%;
+        grid-template-rows: 20% 20% 35% 25%;
+
+    }
+
+   
+
+    #contenedorImg {
+        height: 160px;
+        margin: 0px;
+    }
+
+    .img {
+        height: 8rem;
+        width: 8rem;
+        align-self: center;
+        margin-top: 3px;
+    }
+
+    .letraBase {
+        font-size: 30px;
+    }
+
+    #telefono {
+        font-size: 18px;
+        margin-top: 2px;
+    }
+    #telefono2 {
+        font-size: 18px;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+
+    #textoEstudio {
+        font-size: 18px;
+        margin-left: 2px;
+    }
+
+    #imgInfoBody {
+        width: 125px;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+
+    .imgCuerpo {
+        height: 75%;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .infoProyecto {
+        width: 450px;
+        height: 130px;
+    }
+
+    .contenedorHijo {
+        height: 150px;
+
+    }
+
+    .contenedorCuerpo {
+        height: 250px;
+    }
+
+    #hijosUltimos {
+        height: 100px;
+        width: 953px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .contenUlti2 {
+        margin-top: 3px;
+        height: 170px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+    #conteHobbie {
+        font-size: 35px;
+        width: 295px;
+        margin-top: 10px;
+        margin-right:25px;
+        height: 184px;
+        border-top: 2px solid black;
+    }
+    #interestContent2 {
+        width: 340px;
+        height: 160px;
+        margin-right: 5px;
+        margin-top: 8px;
+    }
+
+    .contenedorNombre {
+        height: 9%;
+        font-size: 40px;
+    }
+
+    #titulosCuerpo {
+        font-size: 35px;
+    }
+    #titulosCuerpo2 {
+        font-size: 35px;
+    }
+
+    .infoProyecto {
+        height: 200px;
+    }
+
+    #inforEspacio {
+        height: 152px;
+    }
+
+    #inforEspacio2 {
+        height: 120px;
+    }
+
+    #inforEspacio3 {
+        height: 155px;
+        margin-top: 1px;
+    }
+
+}
