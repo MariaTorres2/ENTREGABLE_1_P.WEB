@@ -10,6 +10,7 @@
 }
 
 .contenedorPadre {
+
     height: 100vh;
     width: 99vw;
     display: grid;
@@ -74,6 +75,7 @@ hr {
     align-content: center;
     margin-right: 100px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
 }
 
 #hijosUltimos {
@@ -239,239 +241,17 @@ footer {
     grid-area: footer;
 }
 
-
-
-@media (max-width:529px) {
-    .contenedorPadre {
-        width: 100vw;
-        background-color: brown;
-        grid-template-areas:
-            "article "
-            "aside"
-            "footer ";
-        grid-template-columns: 100%;
-        grid-template-rows: 40% 30% 30%;
-    }
-}
-
-@media (min-width:530px) and (max-width: 834px) {
-    body {
-        background-color: rgb(148, 225, 255);
-    }
-
+@media (min-width: 1000px) and (max-width: 1900px) {
     .contenedorPadre {
         width: auto;
-        height: auto;
-        grid-template-columns: 30% 51% 19%;
-    }
-
-    #conteHobbie {
-        width: 23%;
-        margin-top: 10px;
-        height: 177px;
-        font-size: 10px;
-    }
-
-    .img {
-        /* imagen personal*/
-        height: 7rem;
-        width: 7rem;
-        align-self: center;
-        margin: none;
-    }
-
-    .letraBase {
-        font-size: 20px;
-    }
-
-    #telefono {
-        font-size: 15px;
-        margin-top: 5px;
-        width: 120px;
-    }
-    #telefono2 {
-        font-size: 13.2px;
-        margin-top: 5px;
-        width: 140px;
-        height: 100px;
-        text-align: left;
-    }
-
-    #textoEstudio {
-        font-size: 15px;
-        margin-top: 2px;
-        width: 140px;
-    }
-
-    #interestContent2 {
-        /* ultimo contenedor imagenes*/
-        width: 130px;
-        height: 120px;
-        margin-right: 5px;
-        margin-top: 8px;
-    }
-
-    #contenedorImg {
-        margin: 0px;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        height: 380px;
-        margin: none;
-    }
-
-    .contenUlti2 {
-        /* ultimo contenedor*/
-        margin-top: 18px;
-        height: 150px;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        border: none;
-    }
-
-    #imgInfoBody {
-        /* letras al lado de imagenes*/
-        width: 210px;
-        height: 70px;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    #imgBody {
-        font-size: 22px;
-        margin-right: 10px;
-        margin-left: 35px;
-        margin-top: 0px;
-        width: 200px;
-    }
-    
-    #imgBody2 {
-        font-size: 22px;
-        width: 200px;
-        margin-right: 10px;
-        margin-left: 35px;
-        width: 170px;
-    }
-
-    .imgCuerpo {
-        /* imnagenes en el cuerpo*/
-        height: 10%;
-        width: 20%;
-        margin-left: 10px;
-    }
-
-    .infoProyecto {
-        width: 427px;
-        height: 88px;
-        
-    }
-
-    .contenedorHijo {
-        /* contenedor foto personal*/
-        height: 180px;
-        margin: none;
-    }
-
-    .contenedorCuerpo {
-        /* contenedores cuerpo*/
-        height: 333px;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        margin: none;
-    }
-
-    #hijosUltimos {
-        height: 130px;
-        align-items: center;
-    }
-
-    .contenedorNombre {
-        height: 18%;
-        font-size: 41px;
-    }
-    #informacion {
-           /* informacion article, contenedor*/
-        margin-top: 2px;
-        display: flex;
-        flex-direction: column;
-        width: 90px;
-        height: 80px;
-    
-    }
-
-    #titulosCuerpo {
-        font-size: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
-        background-color: blueviolet;
-        height: 100px;
-        align-content: center;
-        justify-self: center;
-        text-align: center;
-    }
-    #titulosCuerpo2 {
-        font-size: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-        background-color: blueviolet;
-        height: 100px;
-        align-content: center;
-        justify-self: center;
-        text-align: center;
-    }
-
-    .infoProyecto {
-        height: 109.5px;
-    }
-
-    #inforEspacio {
-        height: 210px;
-    }
-
-    #inforEspacio2 {
-        height: 180px;
-    }
-
-    #inforEspacio3 {
-        height: 190px;
-
-    }
-    .imgCuerpo {
-        height: 95px;
-        width: 120px;
-        border: 1px solid black;
-        margin-left: 15px;
-    }
-    
-    #imgSect2 {
-        height: 80%;
-        width: 60%;
-    }
-    
-    #iconoTelefono {
-        margin-top: 0;
-        width: 1.8rem;
-        height: 1.8rem;
-        margin-top: 5px;
-        border: none;
-    }
-
-}
-
-
-@media (min-width: 834px) and (max-width: 1900px) {
-    .contenedorPadre {
-        width: auto;
-        height: auto;
+        height: 100vh;
         grid-template-columns: 23% 51% 26%;
         grid-template-rows: 20% 20% 35% 25%;
 
     }
 
-   
-
     #contenedorImg {
-        height: 160px;
+        height: 180px;
         margin: 0px;
     }
 
@@ -515,11 +295,11 @@ footer {
 
     .infoProyecto {
         width: 450px;
-        height: 130px;
+        height: 95px;
     }
 
     .contenedorHijo {
-        height: 150px;
+        height: 140px;
 
     }
 
@@ -528,39 +308,41 @@ footer {
     }
 
     #hijosUltimos {
-        height: 100px;
-        width: 953px;
-        align-items: center;
-        justify-items: center;
-        justify-self: center;
+        height: 120px;
+        width: 950px;
+        margin-left: 20px;
+        justify-content: right;
     }
     .contenUlti2 {
-        margin-top: 3px;
-        height: 170px;
-        align-items: center;
+
+        height: 185px;
+        width:auto;
+        align-content: start;
+        justify-content: left;
         display: flex;
         flex-direction: row;
         border: none;
+        margin:0;
     }
     #conteHobbie {
         font-size: 35px;
+        margin:0;
         width: 295px;
-        margin-top: 10px;
-        margin-right:25px;
-        height: 184px;
-        border-top: 2px solid black;
+        height: 190px;
+        margin-top: 5px;
     }
     #interestContent2 {
-        width: 340px;
-        height: 160px;
-        margin-right: 5px;
-        margin-top: 8px;
+        width: 240px;
+        height: 120px;
+        margin-top: 0px;
+        margin-right: 10px;
     }
 
     .contenedorNombre {
         height: 9%;
         font-size: 40px;
     }
+
 
     #titulosCuerpo {
         font-size: 35px;
@@ -571,6 +353,8 @@ footer {
 
     .infoProyecto {
         height: 200px;
+
+       
     }
 
     #inforEspacio {
@@ -582,8 +366,438 @@ footer {
     }
 
     #inforEspacio3 {
-        height: 155px;
+        height: 145px;
         margin-top: 1px;
+    }
+
+    #imgSect2{
+        width: 70%;
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width:530px) and (max-width: 999px) {
+
+    .contenedorPadre {
+        width: auto;
+        height: auto;
+        grid-template-columns: 30% 51% 19%;
+        grid-template-rows: 25% 25% 29.3% 19%;
+    }
+
+ 
+    .img {
+        /* imagen personal*/
+        height: 8rem;
+        width: 8rem;
+        align-self: center;
+        margin: none;
+    }
+
+    .letraBase {
+        font-size: 20px;
+    }
+
+    #telefono {
+        font-size: 19px;
+        margin-top: 5px;
+        width: 140px;
+
+    }
+    #telefono2 {
+        font-size: 19px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        width: 210px;
+        height: 100px;
+        text-align: left;
+    }
+
+    #textoEstudio {
+        font-size: 19px;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+
+    #interestContent2 {
+        /* ultimo contenedor imagenes*/
+        width: 175px;
+        height: 160px;
+        margin-right: 5px;
+        margin-top: 8px;
+    }
+
+    #contenedorImg {
+        margin: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 353px;
+        margin: none;
+        border-left: 1px solid black;
+    }
+    .infoProyecto {
+        height: 112px;
+    }
+
+    .contenUlti2 {
+        /* ultimo contenedor*/
+        margin-top: 0px;
+        height: 220px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+    }
+
+    #imgInfoBody {
+        /* letras al lado de imagenes*/
+        width: 210px;
+        height: 70px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    #imgBody {
+        font-size: 24px;
+        margin-right: 10px;
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 200px;
+    }
+
+    #imgBody2 {
+        font-size: 23px;
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 35px;
+        width: 170px;
+    }
+
+    .imgCuerpo {
+        /* imnagenes en el cuerpo*/
+        height: 10%;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .infoProyecto {
+        width: 420px;
+        height: 130px;
+
+    }
+
+    .contenedorHijo {
+        /* contenedor foto personal*/
+        height: 250px;
+        margin: none;
+    }
+
+    .contenedorCuerpo {
+        /* contenedores cuerpo*/
+        height: 356px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: none;
+    }
+
+    #hijosUltimos {
+        height: 175px;
+        width: 540px;
+        margin: 0px;
+        align-items: center;
+        margin-left: 15px;
+    }
+    #conteHobbie {
+        width: 30%;
+        margin:0px;
+        height: 220px;
+        font-size: 40px;
+        border: 2px solid black;
+    }
+
+    .contenedorNombre {
+        height: 14%;
+        font-size: 41px;
+    }
+    #informacion {
+           /* informacion article, contenedor*/
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        height: 80px;
+
+    }
+
+    #titulosCuerpo {
+        font-size: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 100px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+    #titulosCuerpo2 {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 100px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+   
+
+    #inforEspacio {
+        height: 190.6px;
+    }
+
+    #inforEspacio2 {
+        height: 200px;
+        align-content: center;
+    }
+
+    #inforEspacio3 {
+        height: 205px;
+    }
+    .imgCuerpo {
+        height: 90px;
+        width: 130px;
+        border: 1px solid black;
+        margin-left: 15px;
+    }
+
+    #imgSect2 {
+        height: 90%;
+        width: 90%;
+    }
+
+    #iconoTelefono {
+        margin-top: 0;
+        width: 1.9rem;
+        height: 1.9rem;
+        margin-top: 5px;
+        border: none;
+    }
+    #segundaSect{
+        height: 357px;
+    }
+
+}
+
+@media (min-width:0) and (max-width:529px) {
+
+    .contenedorPadre {
+        width: 100vw;
+        grid-template-areas:
+            "article "
+            "aside"
+            "footer ";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    #conteHobbie {
+        width:100%;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 3px;
+        height: 50px;
+        font-size: 45px;
+        margin-bottom: 10px;
+        
+    }
+
+    .img {
+        /* imagen personal*/
+        height: 9rem;
+        width: 9rem;
+        align-self: center;
+        margin: none;
+    }
+
+    .letraBase {
+        font-size: 20px;
+    
+    }
+    .infoProyecto {
+        height: 123.5px;
+    }
+
+    #inforEspacio {
+        height: 160px;
+    }
+
+    #inforEspacio2 {
+        height: 160px;
+    }
+
+    #inforEspacio3 {
+        height: 130px;
+
+    }
+
+    #telefono {
+        font-size: 18px;
+        margin-top: 5px;
+        width: 180px;
+
+    }
+    #telefono2 {
+        font-size: 18px;
+        margin-top: 0px;
+        width: 180px;
+        height: 20px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    #textoEstudio {
+        font-size: 18px;
+        margin-top: 2px;
+        width: 220px;
+        height: 20px;
+        align-content: center;
+    }
+
+    #interestContent2 {
+        /* ultimo contenedor imagenes*/
+        width: 290px;
+        height: 180px;
+        margin-right: 3px;
+        margin-top: 0px;
+    }
+
+    #contenedorImg {
+        margin: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 260px;
+        margin: none;
+    }
+
+    .contenUlti2 {
+        /* ultimo contenedor*/
+        margin-top: 0px;
+        height: 230px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    #hijosUltimos {
+        height: 550px;
+        width: 350px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #imgInfoBody {
+        /* letras al lado de imagenes*/
+        width: 210px;
+        height: 70px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    #imgBody {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 200px;
+    }
+    
+    #imgBody2 {
+        font-size: 22px;
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 35px;
+        width: 170px;
+    }
+
+    .imgCuerpo {
+        /* imnagenes en el cuerpo*/
+        height: 10%;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .infoProyecto {
+        width: auto;
+        height: 88px;
+        
+    }
+
+    .contenedorHijo {
+        /* contenedor foto personal*/
+        height: 180px;
+        margin: none;
+    }
+
+    .contenedorCuerpo {
+        /* contenedores cuerpo*/
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        margin: none;
+    }
+
+   
+
+    .contenedorNombre {
+        height: 14%;
+        font-size: 39px;
+    }
+    #informacion {
+           /* informacion article, contenedor*/
+        margin-top: 2px;
+        display: flex;
+        flex-direction: row;
+        width: 240px;
+        height: 50px;
+    
+    }
+
+    #titulosCuerpo {
+        font-size: 30px;
+        height: 50px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+    #titulosCuerpo2 {
+        font-size: 30px;
+        height: 50px;
+        align-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+   
+    .imgCuerpo {
+        height: 70px;
+        width: 100px;
+        border: 1px solid black;
+        margin-left: 15px;
+    }
+    
+    #imgSect2 {
+        height: 80%;
+        width: 60%;
+    }
+    
+    #iconoTelefono {
+        margin-top: 0;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top: 5px;
+        border: none;
+    }
+    #segundaSect{
+        height: 320px;
     }
 
 }
