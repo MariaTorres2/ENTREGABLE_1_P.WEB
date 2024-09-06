@@ -6,9 +6,12 @@
 
 
 #border {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
+#segundaSect{
+    border-bottom: 4px ridge black;
+}
 .contenedorPadre {
 
     height: 100vh;
@@ -20,7 +23,8 @@
         "article aside aside"
         "footer footer footer";
     grid-template-columns: 25% 50% 26%;
-    grid-template-rows: 30% 30% 20% 20%;
+    grid-template-rows: 30% 30% 19.8% 20%;
+
 
 }
 
@@ -29,22 +33,26 @@
     height: 14rem;
     border-radius: 15rem;
     border: 3px solid black;
+
+
+}#difuminadoPerfil{
+    box-shadow: -1px -1px 18px  rgb(167, 101, 230);
 }
 
 hr {
     background-color: black;
-    height: 3px;
+    height: 4px;
     width: 100%;
 }
 
 .contenedorHijo {
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     height: 242px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-right: 4px ridge black;
 }
 
 .contenedorCuerpo {
@@ -67,15 +75,15 @@ hr {
 
 #conteHobbie {
     font-size: 60px;
-    background-color: rgb(218, 186, 248);
-    width: 24.8%;
-    margin-top: 5px;
-    height: 195px;
+    background-color: rgb(219, 180, 255);
+    width: 24.75%;
+    margin-top: 6px;
+    height: 199px;
     text-align: center;
     align-content: center;
     margin-right: 100px;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
+    border-right: 4px ridge black;
+    border-top: 4px ridge black;
 }
 
 #hijosUltimos {
@@ -98,9 +106,17 @@ hr {
 
 #titulosCuerpo {
     font-size: 45px;
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(178, 122, 201);
+    border-bottom: 2px solid black;
 }
 #titulosCuerpo2 {
     font-size: 45px;
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(178, 122, 201);
+    border-bottom: 2px solid black;
 }
 .contenedorNombre {
     margin-top: 3px;
@@ -124,7 +140,7 @@ hr {
 }
 
 #inforEspacio3 {
-    height: 165px;
+    height: 180px;
 
 }
 
@@ -137,13 +153,18 @@ hr {
 
 }
 
+#titulosInfo{
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(178, 122, 201);
+
+}
 .infoProyecto {
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
     width: 33.4%;
     height: 250px;
     border-top: 2px solid black;
@@ -181,6 +202,11 @@ hr {
     margin-top: 10px;
     margin-left: 10px;
 }
+#telefono2 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 #textoEstudio {
     font-size: 25px;
@@ -207,7 +233,7 @@ hr {
 .imgCuerpo {
     height: 90%;
     width: 60%;
-    border: 1px solid black;
+    border: 5px groove black;
     margin-left: 15px;
 }
 
@@ -246,7 +272,7 @@ footer {
         width: auto;
         height: 100vh;
         grid-template-columns: 23% 51% 26%;
-        grid-template-rows: 20% 20% 35% 25%;
+        grid-template-rows: 20% 20% 35.5% 24.5%;
 
     }
 
@@ -310,8 +336,8 @@ footer {
     #hijosUltimos {
         height: 120px;
         width: 950px;
-        margin-left: 20px;
-        justify-content: right;
+        margin:0px;
+        justify-content: center;
     }
     .contenUlti2 {
 
@@ -327,8 +353,8 @@ footer {
     #conteHobbie {
         font-size: 35px;
         margin:0;
-        width: 295px;
-        height: 190px;
+        width: 23%;
+        height: 100%;
         margin-top: 5px;
     }
     #interestContent2 {
